@@ -20,16 +20,16 @@ st.sidebar.header("User Input Parameters")
 
 def user_input_features():
     
-    temperature = st.sidebar.slider('Temperature (°C)', float(df['Temperature'].min()), float(df['Temperature'].max()), float(df['Temperature'].mean()))
-    humidity = st.sidebar.slider('Humidity (%)', float(df['Humidity'].min()), float(df['Humidity'].max()), float(df['Humidity'].mean()))
-    windspeed = st.sidebar.slider('Wind Speed (m/s)', float(df['Windspeed'].min()), float(df['Windspeed'].max()), float(df['Windspeed'].mean()))
-    solar_radiation = st.sidebar.slider('Solar Radiation (W/m²)', float(df['Solar Radiation'].min()), float(df['Solar Radiation'].max()), float(df['Solar Radiation'].mean()))
+    temperature = st.sidebar.slider('temperature (°C)', float(df['temperature'].min()), float(df['temperature'].max()), float(df['temperature'].mean()))
+    humidity = st.sidebar.slider('humidity (%)', float(df['humidity'].min()), float(df['humidity'].max()), float(df['humidity'].mean()))
+    windspeed = st.sidebar.slider('wind Speed (m/s)', float(df['windspeed'].min()), float(df['windspeed'].max()), float(df['windspeed'].mean()))
+    solar_radiation = st.sidebar.slider('solar Radiation (W/m²)', float(df['solar Radiation'].min()), float(df['solar Radiation'].max()), float(df['solar Radiation'].mean()))
 
     data = {
-        'Temperature': temperature,
-        'Humidity': humidity,
-        'Windspeed': windspeed,
-        'Solar Radiation': solar_radiation
+        'temperature': temperature,
+        'humidity': humidity,
+        'windspeed': windspeed,
+        'solar Radiation': solar_radiation
     }
     features = pd.DataFrame(data, index=[0])
     return features
