@@ -8,7 +8,7 @@ import pickle
 with open('gbr.pkl', 'rb') as file:
     model = pickle.load(file)
     
-data = pd.read_csv('solarpowergeneration.csv')
+df = pd.read_csv('solarpowergeneration.csv')
 
 
 # Title and Description
