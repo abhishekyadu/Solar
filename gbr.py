@@ -22,7 +22,7 @@ def user_input_features():
     
     temperature = st.sidebar.slider('temperature (°C)', float(df['temperature'].min()), float(df['temperature'].max()), float(df['temperature'].mean()))
     humidity = st.sidebar.slider('humidity (%)', float(df['humidity'].min()), float(df['humidity'].max()), float(df['humidity'].mean()))
-    windspeed = st.sidebar.slider('wind Speed (m/s)', float(df['windspeed'].min()), float(df['windspeed'].max()), float(df['windspeed'].mean()))
+    windspeed = st.sidebar.slider('windspeed (m/s)', float(df['windspeed'].min()), float(df['windspeed'].max()), float(df['windspeed'].mean()))
     solar_radiation = st.sidebar.slider('solar Radiation (W/m²)', float(df['solar Radiation'].min()), float(df['solar Radiation'].max()), float(df['solar Radiation'].mean()))
 
     data = {
